@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glow_button::before {
+  content: "";
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  background-size: 400%;
+  border-radius: 999px;
+  filter: blur(50px);
+  z-index: -1;
+  left: -4px;
+  top: -4px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  animation: glowing 20s linear infinite;
+}
+.glow_button:active {
+  transition: all 0.02s linear;
+  border: 5px solid black;
+  transform: scale(0.9);
+  background: transparent;
+}
+.glow_button:hover {
+  transition: all 0.3 ease-in-out;
+}
+.glow_button:hover::before {
+  opacity: 1;
+}
+
+.vr {
+  animation: floating 3s ease-in-out infinite;
+}
+.feature-page {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+  column-gap: 50px;
+}
+.heading {
+  grid-area: 1/1/2/4;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.item-1 {
+  grid-area: 2/1/3/2;
+  justify-self: center;
+  /* align-self: center; */
+  /* display: flex; */
+  /* justify-content: center; */
+}
+.card {
+  transition: all 0.1s ease-in-out;
+}
+.card-img {
+  background-position: center;
+  background-size: cover;
+}
+.ci1 {
+  background-image: url("../public/3d.svg");
+}
+.card:hover .ci1 {
+  background-image: url("../public/3dw.svg");
+}
+.ci2 {
+  background-image: url("../public/performance.svg");
+}
+.card:hover .ci2 {
+  background-image: url("../public/performancew.svg");
+}
+.ci3 {
+  background-image: url("../public/4k.svg");
+}
+.card:hover > .ci3 {
+  background-image: url("../public/4kw.svg");
+}
+.card:hover {
+  transform: scale(1.1);
+  background-color: black;
+  border: white solid;
+}
+.card:hover > p {
+  color: white;
+}
+
+.circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  filter: blur(5px);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 50px;
+}
+.wave {
+  aspect-ratio: 900/600;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.wave-1 {
+  background-image: url(../public/wave.svg);
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+    transform: rotate(45);
+  }
+  50% {
+    transform: translate(5px, 15px);
+    transform: rotate(45);
+  }
+  100% {
+    transform: translate(0, -0px);
+    transform: rotate(45);
+  }
+}
