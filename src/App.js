@@ -4,6 +4,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import "./App.css";
 import { useRef } from "react";
+import VanillaTilt from "vanilla-tilt";
+import ThreeScene from "./threeScene";
+
 export default function App() {
   gsap.registerPlugin(useGSAP);
   gsap.registerPlugin(ScrollTrigger);
@@ -91,6 +94,15 @@ export default function App() {
       });
     }
   }, []);
+  const aboutRef = useRef();
+  useEffect(() => {
+    VanillaTilt.init(aboutRef.current, {
+      max: 5,
+      speed: 200,
+      glare: true,
+      "max-glare": 0.5,
+    });
+  });
 
   return (
     <>
@@ -124,10 +136,10 @@ export default function App() {
             className="h-[65px] pl-7 pr-7  hover:h-[75px] "
           />
           <ul className=" text-2xl text-white h-full flex justify-between items-center w-[800px]  pr-7 ">
-            <li className="hover:text-gray-300">Home</li>
-            <li className="hover:text-gray-300">About Us</li>
-            <li className="hover:text-gray-300">Pricing </li>
-            <li className="hover:text-gray-300">Contact Us</li>
+            <li className="hover:text-gray-300  ">Home</li>
+            <li className="hover:text-gray-300  ">About Us</li>
+            <li className="hover:text-gray-300  ">Pricing </li>
+            <li className="hover:text-gray-300  ">Contact Us</li>
           </ul>
         </div>
         <div className="h-full">
@@ -182,6 +194,7 @@ export default function App() {
                   <br /> Industry-first Features
                 </p>
                 <img
+                  alt="error"
                   className="underline h-[100px] justify-self-center z-[-1]"
                   src="/underline.svg"
                 ></img>
@@ -218,10 +231,32 @@ export default function App() {
             </div>
           </div>
         </div>
-        <div className="text-white min-h-[100px] w-full bg-specialPurple z-50 relative">
-          <div className="wave wave-1 w-full"></div>
-          Qui aliqua sit elit ipsum enim proident sunt aute velit cupidatat
-          deserunt Lorem nulla dolor.
+        <div className="text-white min-h-[100px] w-full bg-specialPurple relative">
+          <div className="circle-scatter w-full"></div>
+          <div className="wave wave-1 w-full">
+            <div className="about_us_container pt-[100px] min-h-[700px]  w-[1400px] relative left-[50%] translate-x-[-50%] overflow-hidden">
+              <div
+                ref={aboutRef}
+                className="about-us-1 h-[500px] w-full relative left-[-20%] "
+              >
+                <h1 className="text-[3rem] font-extrabold">About Us</h1>
+                <h1 className="text-[1rem] p-[10px]">
+                  Enim labore aliquip culpa deserunt. Mollit aute sunt ullamco
+                  ad fugiat aliquip id nostrud. Sit est commodo exercitation
+                  ullamco anim fugiat sint mollit. Ex fugiat et ad amet deserunt
+                  sit deserunt id elit exercitation voluptate non
+                  nostrud.Incididunt dolore proident veniam sunt exercitation et
+                  aliqua nisi. Officia minim officia eiusmod voluptate aliqua
+                  veniam consectetur dolor. Pariatur mollit pariatur qui velit
+                  minim veniam. Magna nisi cillum incididunt pariatur minim elit
+                  officia incididunt sit mollit est ut dolor quis.
+                </h1>
+              </div>
+              <div className="canvas_container  absolute bg-red-400 ">
+                <ThreeScene />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

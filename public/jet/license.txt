@@ -1,0 +1,11 @@
+Model Information:
+* title:	Shenyang J11 "Flanker-L"
+* source:	https://sketchfab.com/3d-models/shenyang-j11-flanker-l-aaa7700649fc43848020981313cc595c
+* author:	andertan (https://sketchfab.com/andertan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Shenyang J11 "Flanker-L"" (https://sketchfab.com/3d-models/shenyang-j11-flanker-l-aaa7700649fc43848020981313cc595c) by andertan (https://sketchfab.com/andertan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -108,6 +108,7 @@
   background-color: white;
   z-index: 100;
   filter: blur(5px);
+  pointer-events: none;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -127,6 +128,45 @@
 }
 .wave-1 {
   background-image: url(../public/wave.svg);
+}
+.about_us_container {
+  display: grid;
+  grid-template-columns: 1fr 10fr 5fr 1fr;
+  column-gap: 100px;
+}
+.about-us-1 {
+  grid-area: 1/2/2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 20px 20px 40px rgba(113, 93, 242, 0.5);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-top: solid 1px rgba(255, 255, 255, 0.5);
+  border-left: solid 1px rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+.canvas_container {
+  grid-area: 1/3/2/5;
+  justify-self: center;
+}
+.about-us-1 h1 {
+  transform: translateZ(20px);
+}
+.circle-scatter {
+  aspect-ratio: 16/5;
+
+  position: absolute;
+
+  background-image: url(../public/circle-scatter.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @keyframes glowing {
   0% {

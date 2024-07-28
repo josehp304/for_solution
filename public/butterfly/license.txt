@@ -1,0 +1,11 @@
+Model Information:
+* title:	Fantasy Butterfly Animation
+* source:	https://sketchfab.com/3d-models/fantasy-butterfly-animation-0f24b085e8654e4db09c2fe681a79e3f
+* author:	lunequinox (https://sketchfab.com/lunequinox)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Fantasy Butterfly Animation" (https://sketchfab.com/3d-models/fantasy-butterfly-animation-0f24b085e8654e4db09c2fe681a79e3f) by lunequinox (https://sketchfab.com/lunequinox) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
