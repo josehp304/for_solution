@@ -396,8 +396,23 @@ export default function App() {
                   ></img>
                 </div>
               </div>
-              <div>
-                <ThreeScene />
+              <div className="skill w-[1600px] min-h-[900px] relative left-[50%] translate-x-[-50%]  ">
+                <div
+                  className=" text-center text-[5rem] mt-[5rem] relative font-extrabold  "
+                  style={{ fontFamily: "shadow" }}
+                >
+                  Robotics Labs
+                  <img
+                    alt="error"
+                    className="underline h-[100px] w-[30rem]  relative left-[50%] translate-x-[-50%]"
+                    src="/underline.svg"
+                  ></img>
+                </div>
+                <div className="skills w-full h-[700px]  ">
+                  <div className="robotics w-full h-full bg-black rounded-xl p-5 text-[2rem] text-black font-extrabold">
+                    <div className="shadow-xl ">Robotics</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ const ThreeScene = () => {
     // intialisation
     const canvas = document.querySelector(".c");
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(80, 21 / 16, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(80, 1 / 1, 0.1, 1000);
     //camera
     camera.position.set(0, 0, 4);
     camera.lookAt(0, 0, 0);
@@ -21,7 +21,7 @@ const ThreeScene = () => {
       canvas,
       alpha: true,
     });
-    renderer.setSize(1200, 800);
+    renderer.setSize(400, 400);
 
     //cube and sphere
     const geometry = new THREE.BoxGeometry(3, 3, 3);
@@ -45,7 +45,7 @@ const ThreeScene = () => {
 
     //light
     const directionalLighting = new THREE.DirectionalLight(0xffffff, 1);
-    directionalLighting.position.set(0, 10, 15);
+    directionalLighting.position.set(0, 0, 15);
     directionalLighting.target.position.set(0, 0, 0);
     scene.add(directionalLighting);
 
