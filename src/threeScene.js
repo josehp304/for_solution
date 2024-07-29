@@ -12,7 +12,7 @@ const ThreeScene = () => {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(80, 21 / 16, 0.1, 1000);
     //camera
-    camera.position.set(15, 0, 50);
+    camera.position.set(0, 0, 4);
     camera.lookAt(0, 0, 0);
 
     //renderer
@@ -40,8 +40,8 @@ const ThreeScene = () => {
     const controls = new OrbitControls(camera, canvas);
     controls.enableDamping = true; // Enable damping for smoother control
     controls.dampingFactor = 0.25;
-    controls.target.set(15, 0, 0);
-    // controls.enableZoom = false;
+    controls.target.set(0, 0, 0);
+    controls.enableZoom = false;
 
     //light
     const directionalLighting = new THREE.DirectionalLight(0xffffff, 1);
@@ -73,7 +73,7 @@ const ThreeScene = () => {
     });
     //axis helper
     const axisHelper = new THREE.AxesHelper(5);
-    scene.add(axisHelper);
+    // scene.add(axisHelper);
 
     //animate and drawing
 

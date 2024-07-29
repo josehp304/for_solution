@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import "./App.css";
+import "./crayonFont.css";
 import { useRef } from "react";
 import VanillaTilt from "vanilla-tilt";
 import ThreeScene from "./threeScene";
@@ -252,7 +253,150 @@ export default function App() {
                   officia incididunt sit mollit est ut dolor quis.
                 </h1>
               </div>
-              <div className="canvas_container  absolute bg-red-400 ">
+              <div
+                style={{ fontFamily: "shadow" }}
+                className="trusted  text-[5rem] text-center"
+              >
+                Trusted by
+                <br /> 100+ Institutes
+              </div>
+            </div>
+            <div>
+              <div className="scroller">
+                <div className="scrollerc inline-block">
+                  <img
+                    alt="stanford"
+                    src="/stanford (1).png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                  <img
+                    alt="delhi university"
+                    src="/delhi.png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                  <img
+                    alt="harvard university"
+                    src="/harvard.png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                  <img
+                    alt="iit"
+                    src="/iit.png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                  <img
+                    alt="bvb"
+                    src="/bvb.png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                  <img
+                    alt="wipro"
+                    src="/wipro.png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                </div>
+                <div className="scrollerc inline-block">
+                  <img
+                    alt="stanford"
+                    src="/stanford (1).png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                  <img
+                    alt="delhi university"
+                    src="/delhi.png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                  <img
+                    alt="harvard university"
+                    src="/harvard.png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                  <img
+                    alt="iit"
+                    src="/iit.png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                  <img
+                    alt="bvb"
+                    src="/bvb.png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                  <img
+                    alt="wipro"
+                    src="/wipro.png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                </div>
+                <div className="scrollerc inline-block">
+                  <img
+                    alt="stanford"
+                    src="/stanford (1).png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                  <img
+                    alt="delhi university"
+                    src="/delhi.png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                  <img
+                    alt="harvard university"
+                    src="/harvard.png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                  <img
+                    alt="iit"
+                    src="/iit.png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                  <img
+                    alt="bvb"
+                    src="/bvb.png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                  <img
+                    alt="wipro"
+                    src="/wipro.png"
+                    height="150px"
+                    width="150px"
+                    className="inline-block whitespace-nowrap ml-[10rem]"
+                  ></img>
+                </div>
+              </div>
+              <div>
                 <ThreeScene />
               </div>
             </div>

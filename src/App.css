@@ -151,9 +151,10 @@
   transform-style: preserve-3d;
   transform: perspective(1000px);
 }
-.canvas_container {
+.trusted {
   grid-area: 1/3/2/5;
   justify-self: center;
+  align-self: center;
 }
 .about-us-1 h1 {
   transform: translateZ(20px);
@@ -167,6 +168,29 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.scroller {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+.scrollerc {
+  animation-name: scroll;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 @keyframes glowing {
   0% {
