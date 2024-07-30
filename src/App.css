@@ -187,6 +187,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  row-gap: 2rem;
 }
 .robotics {
   grid-area: 1/1/2/3;
@@ -224,6 +225,34 @@
 .project {
   grid-area: 2/1/3/3;
   padding: 10px;
+}
+.robotics-vid {
+  grid-area: 2/4/3/6;
+}
+@media (min-width: 1615px) {
+  .skills {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (max-width: 1610px) {
+  .skills {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .robotics {
+    grid-area: 1/1/2/2;
+  }
+  .class-wise {
+    grid-area: 2/1/3/2;
+  }
+  .project {
+    grid-area: 3/1/4/2;
+  }
+  .robotics-vid {
+    grid-area: 4/1/5/2;
+    z-index: 50;
+  }
 }
 @keyframes image_cycle {
   0% {

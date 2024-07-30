@@ -231,7 +231,7 @@ export default function App() {
             </div>
           </div>
         </div>
-        <div className="text-white min-h-[100px] w-full bg-specialPurple relative">
+        <div className="text-white min-h-[200px] w-full bg-specialPurple relative">
           <div className="circle-scatter w-full"></div>
           <div className="wave wave-1 w-full">
             <div className="about_us_container pt-[100px] min-h-[700px]  w-[1400px] relative left-[50%] translate-x-[-50%] overflow-hidden">
@@ -395,7 +395,7 @@ export default function App() {
                   ></img>
                 </div>
               </div>
-              <div className="skill w-[1600px] min-h-[900px] relative left-[50%] translate-x-[-50%]  ">
+              <div className="skill w-[1600px] min-h-[1000px] relative left-[50%] translate-x-[-50%]  ">
                 <div
                   className=" text-center text-[5rem] mt-[5rem] relative font-extrabold  "
                   style={{ fontFamily: "shadow" }}
@@ -412,8 +412,9 @@ export default function App() {
                     <div className="robotics-title  shadow-xl ">Robotics</div>
                   </div>
                   <div className="class-wise">
-                    <div className="class c-1 bg-yellow-300 w-full h-[30%] rounded-xl mb-5 flex">
+                    <div className="class c-1 bg-yellow-300 w-full h-[25%] rounded-xl mb-5 flex">
                       <img
+                        alt=" "
                         src="/04-05(t).png"
                         height="100px"
                         width="100px"
@@ -423,8 +424,9 @@ export default function App() {
                         <li>Assemble basic line-following robots</li>
                       </ul>
                     </div>
-                    <div className="class c-2 bg-blue-300 w-full h-[30%] rounded-xl mb-5 flex">
+                    <div className="class c-2 bg-blue-300 w-full h-[25%] rounded-xl mb-5 flex">
                       <img
+                        alt=""
                         src="/06-07(t).png"
                         height="100px"
                         width="100px"
@@ -434,8 +436,9 @@ export default function App() {
                         <li>Program robots for specific tasks</li>
                       </ul>
                     </div>
-                    <div className="class c-3 bg-red-400 w-full h-[30%] rounded-xl mb-5 flex">
+                    <div className="class c-3 bg-red-400 w-full h-[25%] rounded-xl mb-5 flex">
                       <img
+                        alt=""
                         src="/08-10(t).png"
                         height="100px"
                         width="100px"
@@ -446,7 +449,32 @@ export default function App() {
                       </ul>
                     </div>
                   </div>
-                  <div className="project w-full h-full bg-red-400"></div>
+                  <div className="project w-full h-full ">
+                    <h1 className="text-center text-[3rem] font-extralight">
+                      Project Topics
+                    </h1>
+                    <ul className="relative left-[50%] translate-x-[-50%] list-disc w-[50%] pt-5">
+                      <li>Pick and Place Robot</li>
+                      <li>Bluetooth Bot</li>
+                      <li>Line Tracker</li>
+                      <li>Avoidance Bot</li>
+                      <li>Spider Walker</li>
+                      <li>Chatter Bot</li>
+                      <li>Remote Rover</li>
+                      <li>Flame Fighter</li>
+                      <li>Gesture Guide </li>
+                      <li>Floor Cleaner</li>
+                    </ul>
+                  </div>
+                  <div className="robotics-vid  rounded-[50px] overflow-hidden">
+                    <video
+                      src="/line-follow.webm"
+                      autoPlay
+                      loop
+                      playsInline
+                      muted
+                    ></video>
+                  </div>
                 </div>
               </div>
             </div>
