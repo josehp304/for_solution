@@ -70,7 +70,7 @@ export default function App() {
           circle.style.top = y + "px";
           circle.x = x;
           circle.y = y;
-          circle.style.scale = (circles.length - index) / 20;
+          circle.style.scale = (circles.length - index) / 10;
 
           const nextCircle = circles[index + 1] || circles[0];
           x += (nextCircle.x - x) * 0.2;
@@ -117,16 +117,6 @@ export default function App() {
         <div className="circle"></div>
         <div className="circle"></div>
         <div className="circle"></div>
-        <div className="circle"></div>
-        <div className="circle"></div>
-        <div className="circle"></div>
-        <div className="circle"></div>
-        <div className="circle"></div>
-        <div className="circle"></div>
-        <div className="circle"></div>
-        <div className="circle"></div>
-        <div className="circle"></div>
-        <div className="circle"></div>
       </div>
       <div className="app bg-githubbg h-screen box-border ">
         <div className="nav fixed z-20  w-full h-[9vh] flex items-center justify-between  ">
@@ -135,7 +125,7 @@ export default function App() {
             alt="error"
             className="h-[65px] pl-7 pr-7  hover:h-[75px] "
           />
-          <ul className=" text-2xl text-white h-full flex justify-between items-center w-[800px]  pr-7 ">
+          <ul className="nav-items text-2xl text-white h-full flex justify-between items-center w-[800px]  pr-7 ">
             <li className="hover:text-gray-300  ">Home</li>
             <li className="hover:text-gray-300  ">About Us</li>
             <li className="hover:text-gray-300  ">Pricing </li>
@@ -155,7 +145,7 @@ export default function App() {
               </div>
             </div>
             <div className="glow-button-container absolute bottom-5 flex justify-center items-center h-[12vmax] w-[12vmax]">
-              <div className="glow_button relative h-[10vmax] w-[10vmax] bg-white rounded-full m-5 flex justify-center items-center">
+              <div className="glow_button relative h-[10vw] w-[10vw] bg-white rounded-full m-5 flex justify-center items-center">
                 <button onClick={scrollToMain2}>
                   <img
                     alt="down"
@@ -187,7 +177,7 @@ export default function App() {
               src="/vr(transparent).svg"
               alt="error, image not loading"
             ></img> */}
-            <div className="feature-page min-h-[900px]  w-full pt-[100px] pb-[100px]  ">
+            <div className="feature-page min-h-[900px]   w-full pt-[100px] pb-[100px]  ">
               <div className="heading text-5xl text-center  font-extrabold">
                 <p>
                   Raising The Bar With
@@ -200,9 +190,7 @@ export default function App() {
                 ></img>
               </div>
               <div className="card item-1 bg-white rounded-[50px] w-full flex justify-center items-center flex-col text-black ">
-                <div className="card-img ci1 h-[100px] w-[100px] mt-[10px] ">
-                  {/* <img className="h-[100px] mt-[10px]" src="/3d.svg"></img> */}
-                </div>
+                <div className="card-img ci1 h-[100px] w-[100px] mt-[10px] "></div>
                 <p className="p-5">
                   Elit voluptate ut velit nisi in aute. Officia eu ut aute
                   ullamco et est veniam. Eu culpa culpa nisi nulla nulla magna
@@ -244,12 +232,7 @@ export default function App() {
                   Enim labore aliquip culpa deserunt. Mollit aute sunt ullamco
                   ad fugiat aliquip id nostrud. Sit est commodo exercitation
                   ullamco anim fugiat sint mollit. Ex fugiat et ad amet deserunt
-                  sit deserunt id elit exercitation voluptate non
-                  nostrud.Incididunt dolore proident veniam sunt exercitation et
-                  aliqua nisi. Officia minim officia eiusmod voluptate aliqua
-                  veniam consectetur dolor. Pariatur mollit pariatur qui velit
-                  minim veniam. Magna nisi cillum incididunt pariatur minim elit
-                  officia incididunt sit mollit est ut dolor quis.
+                  sit deserunt id elit exercitation
                 </h1>
               </div>
               <div
@@ -407,7 +390,7 @@ export default function App() {
                     src="/underline.svg"
                   ></img>
                 </div>
-                <div className="skills w-full min-h-[1000px]">
+                <div className="skills w-full min-h-[1000px] ">
                   <div className="robotics w-full h-full bg-black rounded-xl p-5 text-[2rem] text-black font-extrabold">
                     <div className="robotics-title  shadow-xl ">Robotics</div>
                   </div>
@@ -466,7 +449,7 @@ export default function App() {
                       <li>Floor Cleaner</li>
                     </ul>
                   </div>
-                  <div className="robotics-vid  rounded-[50px] overflow-hidden">
+                  <div className="robotics-vid  rounded-[50px] overflow-hidden]">
                     <video
                       src="/line-follow.webm"
                       autoPlay
