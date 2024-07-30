@@ -236,6 +236,18 @@
   }
 }
 @media (max-width: 1610px) {
+  .container-1 {
+    width: 90vw;
+  }
+  .about_us_container {
+    width: 90vw;
+  }
+  .container {
+    width: 90vw;
+  }
+  .skill {
+    width: 90vw;
+  }
   .skills {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -252,6 +264,15 @@
   .robotics-vid {
     grid-area: 4/1/5/2;
     z-index: 50;
+  }
+}
+@media (max-width: 800px) {
+  .feature-page {
+    grid-template-rows: 1fr 3fr 3fr 3fr;
+    grid-template-columns: 1fr;
+  }
+  .heading {
+    grid-area: 1/1/2/2;
   }
 }
 @keyframes image_cycle {

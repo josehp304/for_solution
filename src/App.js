@@ -144,7 +144,7 @@ export default function App() {
         </div>
         <div className="h-full">
           <div className="shadow bg-navBlack h-full w-full absolute z-10 transition duration-500 ease-in-out">
-            <div className=" absolute left-[50%] translate-x-[-50%] h-full w-[1400px]  flex flex-col items-center justify-center  ">
+            <div className=" container-1 absolute left-[50%] translate-x-[-50%] h-full w-[1400px]  flex flex-col items-center justify-center  ">
               <div className="text-container top-[40vh] flex flex-col items-center">
                 <h1 className="   text-white font-extrabold text-[7vmax] ">
                   FOR SOLUTION
@@ -181,7 +181,7 @@ export default function App() {
           ref={main2Ref}
           className=" main-2 bg-navBlack transition duration-500 ease-in-out min-h-[100px] w-full text-xl text-white relative "
         >
-          <div className="conatiner relative min-h-full w-[1400px] left-[50%] translate-x-[-50%] ">
+          <div className="container relative min-h-full w-[1400px] left-[50%] translate-x-[-50%] ">
             {/* <img
               className="vr opacity-0  translate-x-[-200px] transition-all duration-800 linear h-[200px]"
               src="/vr(transparent).svg"
@@ -407,7 +407,7 @@ export default function App() {
                     src="/underline.svg"
                   ></img>
                 </div>
-                <div className="skills w-full h-[700px]  ">
+                <div className="skills w-full min-h-[1000px]">
                   <div className="robotics w-full h-full bg-black rounded-xl p-5 text-[2rem] text-black font-extrabold">
                     <div className="robotics-title  shadow-xl ">Robotics</div>
                   </div>
