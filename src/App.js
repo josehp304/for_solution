@@ -6,7 +6,6 @@ import "./App.css";
 import "./crayonFont.css";
 import { useRef } from "react";
 import VanillaTilt from "vanilla-tilt";
-import ThreeScene from "./threeScene";
 
 export default function App() {
   gsap.registerPlugin(useGSAP);
@@ -410,8 +409,44 @@ export default function App() {
                 </div>
                 <div className="skills w-full h-[700px]  ">
                   <div className="robotics w-full h-full bg-black rounded-xl p-5 text-[2rem] text-black font-extrabold">
-                    <div className="shadow-xl ">Robotics</div>
+                    <div className="robotics-title  shadow-xl ">Robotics</div>
                   </div>
+                  <div className="class-wise">
+                    <div className="class c-1 bg-yellow-300 w-full h-[30%] rounded-xl mb-5 flex">
+                      <img
+                        src="/04-05(t).png"
+                        height="100px"
+                        width="100px"
+                      ></img>
+                      <ul className="list-disc p-5">
+                        <li>Identify robot components</li>
+                        <li>Assemble basic line-following robots</li>
+                      </ul>
+                    </div>
+                    <div className="class c-2 bg-blue-300 w-full h-[30%] rounded-xl mb-5 flex">
+                      <img
+                        src="/06-07(t).png"
+                        height="100px"
+                        width="100px"
+                      ></img>
+                      <ul className="list-disc p-5">
+                        <li>Introduction to Arduino programming basics</li>
+                        <li>Program robots for specific tasks</li>
+                      </ul>
+                    </div>
+                    <div className="class c-3 bg-red-400 w-full h-[30%] rounded-xl mb-5 flex">
+                      <img
+                        src="/08-10(t).png"
+                        height="100px"
+                        width="100px"
+                      ></img>
+                      <ul className="list-disc p-5">
+                        <li>Explore advanced sensors</li>
+                        <li>Design and build autonomous robots</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="project w-full h-full bg-red-400"></div>
                 </div>
               </div>
             </div>
