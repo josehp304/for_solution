@@ -463,7 +463,7 @@ export default function App() {
             </div>
           </div>
           <div className="footer min-h-[30vh] bg-black flex flex-wrap justify-between">
-            <div className="flex flex-wrap">
+            <div className="footer-mini flex flex-wrap">
               <div className="map p-[50px] w-[300px] h-[300px]">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.3400417772723!2d76.3964639401598!3d10.152990164152842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080882748f4a6f%3A0x30b2ebe45d968458!2sCochin%20International%20Airport!5e0!3m2!1sen!2sin!4v1722375961124!5m2!1sen!2sin"
@@ -491,7 +491,35 @@ export default function App() {
                 </h3>
               </div>
             </div>
-            <div className="">Connect with us on social media</div>
+            <div className=" text-center">
+              <h1 className="text-[1.5rem] pt-[50%] font-extrabold">
+                Connect with us on social media
+              </h1>
+              <img
+                src="/x-icon.png"
+                height="50px"
+                width="50px"
+                className="bg-white rounded-[99px] m-1 p-1 inline-block hover:scale-125"
+              ></img>
+              <img
+                src="/in-icon.png"
+                height="50px"
+                width="50px"
+                className="bg-white rounded-[99px] m-1 p-1 inline-block hover:scale-125"
+              ></img>
+              <img
+                src="/insta-icon.png"
+                height="50px"
+                width="50px"
+                className="bg-white rounded-[99px] m-1 p-1 inline-block hover:scale-125"
+              ></img>
+              <img
+                src="/email-icon.png"
+                height="50px"
+                width="50px"
+                className="bg-white rounded-[99px] m-1 p-1 inline-block hover:scale-125"
+              ></img>
+            </div>
           </div>
         </div>
       </div>
