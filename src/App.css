@@ -234,9 +234,14 @@
     display: none;
   }
   .footer {
-    justify-content: start;
+    align-items: start;
+  }
+  .contact-us-text {
+    padding-top: 10%;
+    padding-left: 10%;
   }
 }
+
 @media (min-width: 1615px) {
   .skills {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -289,7 +294,7 @@
     grid-template-rows: 2fr 2fr 2fr;
     grid-template-columns: 1fr;
     column-gap: 0px;
-    row-gap: 0px;
+    row-gap: 20px;
   }
   .heading {
     grid-area: 1/1/2/2;

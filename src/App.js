@@ -378,7 +378,7 @@ export default function App() {
                   ></img>
                 </div>
               </div>
-              <div className="skill w-[1600px] min-h-[1000px] relative left-[50%] translate-x-[-50%]  ">
+              <div className="skill w-[1600px] min-h-[100px] relative left-[50%] translate-x-[-50%]  ">
                 <div
                   className=" text-center text-[5rem] mt-[5rem] relative font-extrabold  "
                   style={{ fontFamily: "shadow" }}
@@ -390,7 +390,7 @@ export default function App() {
                     src="/underline.svg"
                   ></img>
                 </div>
-                <div className="skills w-full min-h-[1000px] ">
+                <div className="skills w-full min-h-[100px]  ">
                   <div className="robotics w-full h-full bg-black rounded-xl p-5 text-[2rem] text-black font-extrabold">
                     <div className="robotics-title  shadow-xl ">Robotics</div>
                   </div>
@@ -449,13 +449,14 @@ export default function App() {
                       <li>Floor Cleaner</li>
                     </ul>
                   </div>
-                  <div className="robotics-vid  rounded-[50px] overflow-hidden">
+                  <div className="robotics-vid  ">
                     <video
                       src="/line-follow.webm"
                       autoPlay
                       loop
                       playsInline
                       muted
+                      className="rounded-[50px] "
                     ></video>
                   </div>
                 </div>
@@ -463,7 +464,7 @@ export default function App() {
             </div>
           </div>
           <div className="footer min-h-[30vh] bg-black flex flex-wrap justify-between">
-            <div className="footer-mini flex flex-wrap">
+            <div className="footer-mini flex flex-wrap  ">
               <div className="map p-[50px] w-[300px] h-[300px]">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.3400417772723!2d76.3964639401598!3d10.152990164152842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080882748f4a6f%3A0x30b2ebe45d968458!2sCochin%20International%20Airport!5e0!3m2!1sen!2sin!4v1722375961124!5m2!1sen!2sin"
@@ -491,8 +492,8 @@ export default function App() {
                 </h3>
               </div>
             </div>
-            <div className=" text-center">
-              <h1 className="text-[1.5rem] pt-[50%] font-extrabold">
+            <div className=" text-center ">
+              <h1 className="contact-us-text text-[1.5rem] pt-[50%] font-extrabold">
                 Connect with us on social media
               </h1>
               <img
