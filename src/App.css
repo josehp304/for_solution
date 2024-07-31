@@ -253,6 +253,15 @@
   .skill {
     width: 90vw;
   }
+  @media (max-width: 400px) {
+    .map {
+      width: 200;
+      height: 200;
+    }
+    .address {
+      width: 200px;
+    }
+  }
   .skills {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;

@@ -244,7 +244,7 @@ export default function App() {
               </div>
             </div>
             <div>
-              <div className="scroller">
+              <div className="scroller ">
                 <div className="scrollerc inline-block">
                   <img
                     alt="stanford"
@@ -464,11 +464,11 @@ export default function App() {
           </div>
           <div className="footer min-h-[30vh] bg-black flex flex-wrap justify-between">
             <div className="flex flex-wrap">
-              <div className="map p-[50px] ">
+              <div className="map p-[50px] w-[300px] h-[300px]">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.3400417772723!2d76.3964639401598!3d10.152990164152842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080882748f4a6f%3A0x30b2ebe45d968458!2sCochin%20International%20Airport!5e0!3m2!1sen!2sin!4v1722375961124!5m2!1sen!2sin"
-                  width="300"
-                  height="300"
+                  width="100%"
+                  height="100%"
                   style={{ border: 0, borderRadius: "10px" }}
                   allowfullscreen=""
                   loading="lazy"
@@ -477,7 +477,7 @@ export default function App() {
               </div>
               <div
                 // style={{ fontFamily: "shadow" }}
-                className="w-[400px]  p-[50px] pt-[20px]"
+                className="address w-[400px]  p-[50px] pt-[20px]"
               >
                 <h1 className="text-[2rem] text-center font-semibold">
                   Addresses
