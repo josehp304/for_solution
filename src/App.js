@@ -127,22 +127,25 @@ export default function App() {
           />
           <ul className="nav-items text-2xl text-white h-full flex justify-between items-center w-[800px]  pr-7 ">
             <li className="hover:text-gray-300  ">Home</li>
-            <li className="hover:text-gray-300  ">About Us</li>
-            <li className="hover:text-gray-300  ">Pricing </li>
-            <li className="hover:text-gray-300  ">Contact Us</li>
+            <li className="hover:text-gray-300  ">Benfits</li>
+            <li className="hover:text-gray-300  ">About Us </li>
+            <li className="hover:text-gray-300  ">Contact details </li>
           </ul>
         </div>
         <div className="h-full">
           <div className="shadow bg-navBlack h-full w-full absolute z-10 transition duration-500 ease-in-out">
             <div className=" container-1 absolute left-[50%] translate-x-[-50%] h-full w-[1400px]  flex flex-col items-center justify-center  ">
               <div className="text-container top-[40vh] flex flex-col items-center">
-                <h1 className="   text-white font-extrabold text-[7vmax] ">
+                <h1 className="for-solution  text-white font-extrabold text-[6rem] ">
                   FOR SOLUTION
                 </h1>
                 <h1 className="  text-white text-[1vmax] ">
                   𝐓𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐢𝐧𝐠 𝐈𝐝𝐞𝐚𝐬 𝐈𝐧𝐭𝐨 𝐈𝐧𝐭𝐞𝐫𝐚𝐜𝐭𝐢𝐯𝐞 𝐒𝐨𝐥𝐮𝐭𝐭𝐢𝐨𝐧𝐬
                 </h1>
               </div>
+              <button className="bg-white rounded-[99px] p-1 mt-[1rem]">
+                Contact Us
+              </button>
             </div>
             <div className="glow-button-container absolute bottom-5 flex justify-center items-center h-[12vmax] w-[12vmax]">
               <div className="glow_button relative h-[10vw] w-[10vw] bg-white rounded-full m-5 flex justify-center items-center">

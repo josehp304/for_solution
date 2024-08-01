@@ -299,6 +299,9 @@
   .heading {
     grid-area: 1/1/2/2;
   }
+  .for-solution {
+    font-size: 10vw;
+  }
   /* .card {
     height: 30%;
   } */
