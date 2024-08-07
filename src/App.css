@@ -1,383 +1,97 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.glow_button::before {
-  content: "";
-  height: calc(100% + 10px);
-  width: calc(100% + 10px);
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-  position: absolute;
-  background-size: 400%;
-  border-radius: 999px;
-  filter: blur(50px);
-  z-index: -1;
-  left: -4px;
-  top: -4px;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-  animation: glowing 20s linear infinite;
-}
-.glow_button:active {
-  transition: all 0.02s linear;
-  border: 5px solid black;
-  transform: scale(0.9);
-  background: transparent;
-}
-.glow_button:hover {
-  transition: all 0.3 ease-in-out;
-}
-.glow_button:hover::before {
-  opacity: 1;
+.playwrite-cl {
+  font-family: "Playwrite CL", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-.vr {
-  animation: floating 3s ease-in-out infinite;
-}
-.feature-page {
-  display: grid;
-  grid-template-rows: 200px 600px;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 50px;
-  column-gap: 50px;
-}
 .heading {
-  grid-area: 1/1/2/4;
-  justify-self: center;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
+  line-height: 7rem;
+  animation: all 2s ease-in-out;
 }
-.item-1 {
-  grid-area: 2/1/3/2;
-  justify-self: center;
-  /* align-self: center; */
-  /* display: flex; */
-  /* justify-content: center; */
+.headingImage {
+  width: 800px;
 }
-.card {
+.sub-heading {
+  font-size: 1rem;
+}
+.cardImage:hover {
   transition: all 0.1s ease-in-out;
-}
-.card-img {
-  background-position: center;
-  background-size: cover;
-}
-.ci1 {
-  background-image: url("../public/3d.svg");
-}
-.card:hover .ci1 {
-  background-image: url("../public/3dw.svg");
-}
-.ci2 {
-  background-image: url("../public/performance.svg");
-}
-.card:hover .ci2 {
-  background-image: url("../public/performancew.svg");
-}
-.ci3 {
-  background-image: url("../public/4k.svg");
-}
-.card:hover > .ci3 {
-  background-image: url("../public/4kw.svg");
-}
-.card:hover {
-  transform: scale(1.1);
-  background-color: black;
-  border: white solid;
-}
-.card:hover > p {
-  color: white;
+  transform: scale(1.05);
 }
 
-.circle {
-  height: 20px;
-  width: 20px;
-  border-radius: 50px;
-  position: fixed;
-  background-color: white;
-  z-index: 100;
-  filter: blur(5px);
-  pointer-events: none;
-}
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background-color: black;
-}
-::-webkit-scrollbar-thumb {
-  background: white;
-  border-radius: 50px;
-}
-.wave {
-  aspect-ratio: 900/600;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.wave-1 {
-  background-image: url(../public/wave.svg);
-}
-.about_us_container {
-  display: grid;
-  grid-template-columns: 1fr 10fr 5fr 1fr;
-  column-gap: 100px;
-}
-.about-us-1 {
-  grid-area: 1/2/2/3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  box-shadow: 20px 20px 40px rgba(113, 93, 242, 0.5);
-  border-radius: 15px;
-  padding: 20px;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.2);
-  border-top: solid 1px rgba(255, 255, 255, 0.5);
-  border-left: solid 1px rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
-  transform-style: preserve-3d;
-  transform: perspective(1000px);
-}
-.trusted {
-  grid-area: 1/3/2/5;
-  justify-self: center;
-  align-self: center;
-}
-.about-us-1 h1 {
-  transform: translateZ(20px);
-}
-.circle-scatter {
-  aspect-ratio: 16/5;
-
-  position: absolute;
-
-  background-image: url(../public/circle-scatter.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.scroller {
-  white-space: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-.scroller::-webkit-scrollbar {
-  display: none;
-}
-.scrollerc {
-  animation-name: scroll;
-  animation-duration: 20s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-.skills {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 2rem;
-}
-.robotics {
-  grid-area: 1/1/2/3;
-  background-image: url(/public/robotics-1.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 10px solid white;
-  animation: image_cycle 5s ease infinite;
-}
-.robotics-title {
-  text-align: center;
-  backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 50px;
-}
-.class-wise {
-  grid-area: 1/4/2/6;
-}
-/* .c-1 {
-  background-color: rgba(255, 255, 0, 1);
-}
-.c-2 {
-  background-color: rgb(153, 211, 255);
-}
-.c-3 {
-  background-color: rgba(255, 0, 0, 1);
-} */
-.class {
-  backdrop-filter: blur(5px);
-  box-shadow: 5px 5px 30px white;
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-}
-.project {
-  grid-area: 2/1/3/3;
-  padding: 10px;
-}
-.robotics-vid {
-  grid-area: 2/4/3/6;
-}
 @media (orientation: portrait) {
-  .circle {
+  .root {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-image: url(../public/forWave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (max-width: 500px) {
+  .heading {
+    font-size: 15vw;
+    line-height: 20vw;
+  }
+  .smartBoard {
     display: none;
   }
-  .footer {
-    align-items: start;
+  .sub-heading {
+    font-size: 5vw;
+    /* line-height: 3vw; */
+    width: 90%;
   }
-  .contact-us-text {
-    padding-top: 10%;
-    padding-left: 10%;
+  .firstPage {
+    width: 100%;
+    min-height: 100px;
   }
-}
-
-@media (min-width: 1615px) {
-  .skills {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+  .headingContainer {
+    min-height: 300px;
   }
 }
-@media (max-width: 1610px) {
-  .container-1 {
-    width: 90vw;
-  }
-  .about_us_container {
-    width: 90vw;
-  }
-  .container {
-    width: 90vw;
-  }
-  .skill {
-    width: 90vw;
-  }
-
-  .skills {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-  }
-  .robotics {
-    grid-area: 1/1/2/2;
-  }
-  .class-wise {
-    grid-area: 2/1/3/2;
-  }
-  .project {
-    grid-area: 3/1/4/2;
-  }
-  .robotics-vid {
-    grid-area: 4/1/5/2;
-    z-index: 50;
+@media (max-width: 750px) {
+  .cardContainer {
+    flex-direction: column;
   }
 }
-@media (max-width: 400px) {
-  .map {
-    width: 200;
-    height: 200;
-  }
-  .address {
-    width: 200px;
-  }
-}
-@media (max-width: 800px) {
-  .feature-page {
-    grid-template-rows: 2fr 2fr 2fr;
-    grid-template-columns: 1fr;
-    column-gap: 0px;
-    row-gap: 20px;
+@media (min-width: 500px) and (max-width: 900px) {
+  .smartBoard {
+    display: none;
   }
   .heading {
-    grid-area: 1/1/2/2;
-  }
-  .for-solution {
     font-size: 10vw;
+    line-height: 10vw;
   }
-  /* .card {
-    height: 30%;
-  } */
+
+  .sub-heading {
+    font-size: 5vw;
+    line-height: 4vw;
+    width: 100%;
+  }
+  .firstPage {
+    height: 100vw;
+    width: 90%;
+  }
+  .headingContainer {
+    /* height: 100vw; */
+  }
 }
-@media (max-width: 1110px) {
-  .nav {
-    width: 100vw;
-  }
-  .nav-items {
-    font-size: 1rem;
-    width: 50vw;
-  }
-}
-@media (max-width: 665px) {
-  .nav-items {
+@media (max-width: 900px) {
+  .navigation {
     display: none;
   }
 }
-@media (max-width: 815px) {
-  .about_us_container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+@media (min-width: 900px) and (max-width: 1560px) {
+  .headingImage {
+    width: 50vw;
+    height: 50vw;
   }
-  .about-us-1 {
-    grid-area: 1/1/2/2;
-    position: static;
+  .heading {
+    font-size: 5vw;
+    line-height: 5vw;
   }
-  .trusted {
-    grid-area: 2/1/3/2;
-  }
-}
-
-@keyframes image_cycle {
-  0% {
-    background-image: url("/public/robotics-1.jpg");
-  }
-  33% {
-    background-image: url("/public/robotics-2.webp");
-  }
-  66% {
-    background-image: url("/public/robotics-4.jpg");
-  }
-  100% {
-    background-image: url("/public/robotics-1.jpg");
-  }
-}
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-@keyframes floating {
-  0% {
-    transform: translate(0, 0px);
-    transform: rotate(45);
-  }
-  50% {
-    transform: translate(5px, 15px);
-    transform: rotate(45);
-  }
-  100% {
-    transform: translate(0, -0px);
-    transform: rotate(45);
+  .headingContainer {
+    /* padding-top: 100px; */
   }
 }

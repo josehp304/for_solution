@@ -1,0 +1,15 @@
+.modalCard {
+  width: 90vw;
+}
+.modalCardContent {
+  padding: 25px;
+}
+
+@media (min-width: 600px) {
+  .modalCard {
+    width: 600px;
+  }
+  .modalCardContent {
+    padding: 100px;
+  }
+}
