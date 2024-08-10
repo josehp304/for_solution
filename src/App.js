@@ -18,6 +18,7 @@ import {
 import Modal from "./modal.js";
 import Marque from "./Marquee.js";
 import ImageLoop from "./ImageLoop.js";
+import Footer from "./footer.js";
 export default function App() {
   const theme = createTheme({
     palette: {
@@ -499,7 +500,7 @@ export default function App() {
               </Grid>
             </Grid>
           </Container>
-          <Box sx={{ height: "400px", backgroundColor: "primary.main" }}></Box>
+          <Footer />
         </div>
       </ThemeProvider>
     </>
