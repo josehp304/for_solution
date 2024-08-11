@@ -19,6 +19,7 @@ import Modal from "./modal.js";
 import Marque from "./Marquee.js";
 import ImageLoop from "./ImageLoop.js";
 import Footer from "./footer.js";
+import SmartBoardIcon from "./smartBoard.svg";
 export default function App() {
   const theme = createTheme({
     palette: {
@@ -147,7 +148,7 @@ export default function App() {
               <Box sx={{ paddingTop: "100px" }} className="smartBoard">
                 <img
                   alt="smartBoard"
-                  src="/static/smartboard.svg"
+                  src={SmartBoardIcon}
                   // height="500px"
                   width="60vw"
                   className="headingImage"
