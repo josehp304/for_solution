@@ -4,7 +4,7 @@ import XIcon from "@mui/icons-material/X";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import { Scale } from "@mui/icons-material";
+
 export default function Footer() {
   return (
     <>
