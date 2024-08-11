@@ -121,6 +121,7 @@ export default function App() {
                 )}
                 <Box
                   sx={{
+                    paddingTop: "20px",
                     fontWeight: 300,
                     color: "primary.light",
                     maxWidth: "35rem",
