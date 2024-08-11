@@ -147,7 +147,7 @@ export default function App() {
               <Box sx={{ paddingTop: "100px" }} className="smartBoard">
                 <img
                   alt="smartBoard"
-                  src="/smartboard.svg"
+                  src="/static/smartboard.svg"
                   // height="500px"
                   width="60vw"
                   className="headingImage"
