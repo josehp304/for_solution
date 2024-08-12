@@ -46,7 +46,6 @@ export default function App() {
   }, []);
   let [modalToggel, setModelToggel] = useState(false);
   const getStarted = () => {
-    console.log("getStarted");
     setModelToggel((modalToggel) => !modalToggel);
   };
   return (

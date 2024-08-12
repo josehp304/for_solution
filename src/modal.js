@@ -2,8 +2,29 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Card, CardContent, Box, Button, TextField } from "@mui/material";
 import "./Modal.css";
-export default function Modal({ isOpen, onClose, children }) {
+import { app, db } from "./firebaseConfig";
+import { useState } from "react";
+import { collection, addDoc } from "firebase/firestore";
+export default function Modal({ isOpen, onClose }) {
   const id = document.getElementById("modal");
+  let [fullName, setFullName] = useState("");
+  let [email, setEmail] = useState(" ");
+  let [phoneNo, setPhoneNo] = useState("");
+  let [org, setOrg] = useState("");
+
+  const handleSubmit = async () => {
+    try {
+      const docRef = addDoc(collection(db, "contact"), {
+        fullName: fullName,
+        email: email,
+        phoneNumber: phoneNo,
+        orgName: org,
+      });
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
   if (isOpen) {
     return ReactDOM.createPortal(
       <>
@@ -59,13 +80,58 @@ export default function Modal({ isOpen, onClose, children }) {
                 justifyContent: "space-around",
               }}
             >
-              <TextField label="Full Name*" variant="standard" />
-              <TextField label="Email*" variant="standard" />
-              <TextField label="Organisation Name" variant="standard" />
-              <TextField label="Phone number" variant="standard" />
-              <TextField label="Full Name" variant="standard" />
-              <Button variant="contained">Submit</Button>
-              <Button>Reset</Button>
+              <TextField
+                label="Full Name*"
+                variant="standard"
+                value={fullName}
+                onChange={(e) => {
+                  setFullName(e.target.value);
+                }}
+              />
+              <TextField
+                label="Email*"
+                variant="standard"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+              />
+              <TextField
+                label="Phone number"
+                variant="standard"
+                value={phoneNo}
+                onChange={(e) => {
+                  setPhoneNo(e.target.value);
+                }}
+              />
+              <TextField
+                label="Organisation Name"
+                variant="standard"
+                value={org}
+                onChange={(e) => {
+                  setOrg(e.target.value);
+                }}
+              />
+
+              <Button
+                variant="contained"
+                onClick={() => {
+                  handleSubmit();
+                  console.log(fullName, email, phoneNo, org);
+                }}
+              >
+                Submit
+              </Button>
+              <Button
+                onClick={() => {
+                  setFullName("");
+                  setEmail("");
+                  setPhoneNo("");
+                  setOrg("");
+                }}
+              >
+                Reset
+              </Button>
             </Box>
           </CardContent>
         </Card>
