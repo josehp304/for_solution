@@ -3,27 +3,75 @@ import ReactDOM from "react-dom";
 import { Card, CardContent, Box, Button, TextField } from "@mui/material";
 import "./Modal.css";
 import { app, db } from "./firebaseConfig";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { collection, addDoc } from "firebase/firestore";
 export default function Modal({ isOpen, onClose }) {
   const id = document.getElementById("modal");
   let [fullName, setFullName] = useState("");
-  let [email, setEmail] = useState(" ");
+  let [email, setEmail] = useState("");
   let [phoneNo, setPhoneNo] = useState("");
   let [org, setOrg] = useState("");
+  let [inputError, setInputError] = useState(false);
+  const regexEmail = /.+\@.+\..+/i;
+  const regexPhoneNo = /\+|\d{10,13}/;
+  const handleReset = () => {
+    setFullName("");
+    setEmail("");
+    setPhoneNo("");
+    setOrg("");
+  };
 
   const handleSubmit = async () => {
     try {
-      const docRef = addDoc(collection(db, "contact"), {
-        fullName: fullName,
-        email: email,
-        phoneNumber: phoneNo,
-        orgName: org,
-      });
+      if (validation()) {
+        const docRef = addDoc(collection(db, "contact"), {
+          fullName: fullName,
+          email: email,
+          phoneNumber: phoneNo,
+          orgName: org,
+        });
+        setInputError(false);
+        onClose();
+      } else {
+        setInputError(true);
+        console.log("incorrect input");
+      }
     } catch (e) {
       console.error(e);
     }
   };
+
+  const validation = () => {
+    if (
+      email.match(regexEmail) &&
+      phoneNo.match(regexPhoneNo) &&
+      fullName !== ""
+    ) {
+      console.log("hi");
+      return true;
+    } else {
+      console.log("flop");
+      return false;
+    }
+  };
+
+  useEffect(() => {
+    const escapeListener = (e) => {
+      console.log("yayi");
+      if (e.key === "Escape") {
+        onClose();
+      }
+    };
+    if (isOpen) {
+      window.addEventListener("keydown", escapeListener);
+    } else {
+      window.removeEventListener("keydown", escapeListener);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", escapeListener);
+    };
+  }, [isOpen]);
 
   if (isOpen) {
     return ReactDOM.createPortal(
@@ -40,6 +88,9 @@ export default function Modal({ isOpen, onClose }) {
             backgroundColor: "rgba(0, 0, 0, 0.8)",
             // backdropFilter: "blur(5px)",
             zIndex: 1000,
+          }}
+          onClick={() => {
+            onClose();
           }}
         ></Box>
         <Card
@@ -80,6 +131,16 @@ export default function Modal({ isOpen, onClose }) {
                 justifyContent: "space-around",
               }}
             >
+              <Box
+                sx={{
+                  color: "red",
+                  textAlign: "center",
+                  border: "solid 2px red",
+                  display: inputError ? "" : "none",
+                }}
+              >
+                Incorrect input!, Try again
+              </Box>
               <TextField
                 label="Full Name*"
                 variant="standard"
@@ -117,21 +178,14 @@ export default function Modal({ isOpen, onClose }) {
                 variant="contained"
                 onClick={() => {
                   handleSubmit();
+
+                  handleReset();
                   console.log(fullName, email, phoneNo, org);
                 }}
               >
                 Submit
               </Button>
-              <Button
-                onClick={() => {
-                  setFullName("");
-                  setEmail("");
-                  setPhoneNo("");
-                  setOrg("");
-                }}
-              >
-                Reset
-              </Button>
+              <Button onClick={handleReset}>Reset</Button>
             </Box>
           </CardContent>
         </Card>
