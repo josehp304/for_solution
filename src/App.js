@@ -20,6 +20,9 @@ import Marque from "./Marquee.js";
 import ImageLoop from "./ImageLoop.js";
 import Footer from "./footer.js";
 import SmartBoardIcon from "./smartBoard.svg";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 export default function App() {
   const theme = createTheme({
     palette: {
@@ -47,6 +50,13 @@ export default function App() {
   let [modalToggel, setModelToggel] = useState(false);
   const getStarted = () => {
     setModelToggel((modalToggel) => !modalToggel);
+  };
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
   return (
     <>
@@ -500,6 +510,14 @@ export default function App() {
                 </Box>
               </Grid>
             </Grid>
+            <Box className='testimony'><Typography variant='h2' sx={{textAlign:'center',fontFamily:'playwrite CL,cursive',p:5}}>Testimonys</Typography>
+                    <Slider  {...settings}>
+                      <Box className='testimonyCard' sx={{}}><Box sx={{height:'300px'}}>1</Box></Box>
+                      <Box className='testimonyCard' sx={{}}><Box sx={{height:'300px'}}>2</Box></Box>
+                      <Box className='testimonyCard' sx={{}}><Box sx={{height:'300px'}}>3</Box></Box>
+                      <Box className='testimonyCard' sx={{}}><Box sx={{height:'300px'}}>4</Box></Box>
+                    </Slider>
+            </Box>
           </Container>
           <Footer />
         </div>
