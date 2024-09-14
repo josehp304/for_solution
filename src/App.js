@@ -14,6 +14,7 @@ import {
   Card,
   CardContent,
   Grid,
+  Avatar
 } from "@mui/material";
 import Modal from "./modal.js";
 import Marque from "./Marquee.js";
@@ -539,24 +540,22 @@ export default function App() {
                          The clarity of the display panels, coupled with the interactive features,
                           makes every lesson more dynamic. Teachers are finding it easier to engage 
                           students, and the setup has been a great investment for our institution."
-                      </Typography><Typography sx={{textAlign:'center',pt:'10px'}}>– David L., School District IT Manager</Typography></Box>
+                      </Typography><Box sx={{textAlign:'center',pt:'10px',display:'flex',justifyContent:'center',alignItems:'center'}}>– David L., School District IT Manager<Avatar sx={{ml:3}} /></Box></Box>
                       <Box><Typography variant='h4' sx={{textAlign:'center'}}>"We upgraded to For Solution’s display panels, and it’s been a fantastic
                          improvement. From day one, it was easy to integrate with our existing system, and the 
                          technical support has been prompt and helpful. Highly recommend for any school looking 
                          to modernize!"
                       
-                      </Typography><Typography  sx={{textAlign:'center',pt:'10px'}}>– Jessica P., Head of Curriculum</Typography></Box>
+                      </Typography>
+                      <Box sx={{textAlign:'center',pt:'10px',display:'flex',justifyContent:'center',alignItems:'center'}}>– Jessica P., Head of Curriculum<Avatar sx={{ml:3}} /></Box></Box>
                       <Box><Typography variant="h4" sx={{textAlign:'center',fontFamily:'noto-serif',fontWeight:100}}>"The team at For Solution provided excellent service from consultation to installation.
                          The smart class solution is intuitive, and the panels have vibrant displays with responsive touch features. It has made 
                          interactive learning a breeze in our classrooms."
-
-
-
-                      </Typography><Typography  sx={{textAlign:'center',pt:'10px'}}>– Paul A., Educational Technology Consultant</Typography></Box>
+                      </Typography><Box sx={{textAlign:'center',pt:'10px',display:'flex',justifyContent:'center',alignItems:'center'}}>– Paul A., Educational Technology Consultant<Avatar sx={{ml:3}} /></Box></Box>
                       <Box><Typography variant='h4' sx={{textAlign:'center',fontFamily:'noto-serif',fontWeight:100}}>"The installation process was smooth, and For Solution’s team ensured we were trained on all the features.
                          The display panels are high-quality, and our teachers are thrilled with the technology's ease of use
                         . It’s transformed our classrooms into more engaging environments."
-                      </Typography><Typography sx={{textAlign:'center',pt:'10px'}}>– Lisa T., School Operations Manager</Typography></Box>
+                      </Typography><Box sx={{textAlign:'center',pt:'10px',display:'flex',justifyContent:'center',alignItems:'center'}}>– Lisa T., School Operations Manager<Avatar sx={{ml:3}} /></Box></Box>
                     </Slider>
             </Box>
           </Container>
