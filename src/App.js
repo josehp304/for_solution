@@ -20,6 +20,9 @@ import Marque from "./Marquee.js";
 import ImageLoop from "./ImageLoop.js";
 import Footer from "./footer.js";
 import SmartBoardIcon from "./smartBoard.svg";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 export default function App() {
   const theme = createTheme({
     palette: {
@@ -48,6 +51,34 @@ export default function App() {
   const getStarted = () => {
     setModelToggel((modalToggel) => !modalToggel);
   };
+  var settings = {
+    
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    autoplay: true,              
+    autoplaySpeed: 2000,
+    pauseOnHover:true,
+  };
+
+  function scrollToProducts(){
+    document.querySelector('.productSection').scrollIntoView({
+      behavior:'smooth'
+    })
+  }
+  function scrollToAbout(){
+    document.querySelector('.cards').scrollIntoView({
+      behavior:'smooth'
+    })
+  }
+  function scrollToHome(){
+    document.querySelector('.headingContainer').scrollIntoView({
+      behavior:'smooth'
+    })
+  }
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -80,9 +111,9 @@ export default function App() {
                     width: "40vw",
                   }}
                 >
-                  <Box className="navigation">Home</Box>
-                  <Box className="navigation">About US</Box>
-                  <Box className="navigation">Products</Box>
+                  <Box className="navigation"  onClick={scrollToHome}>Home</Box>
+                  <Box className="navigation" onClick={scrollToAbout}>About US</Box>
+                  <Box className="navigation" onClick={scrollToProducts}>Products</Box>
                   <Box className="navigation">Blog</Box>
                 </Box>
               </Toolbar>
@@ -190,6 +221,7 @@ export default function App() {
                 textAlign: "center",
                 marginTop: "5vh",
               }}
+              className='cards'
             >
               Why choose Us?
             </Typography>
@@ -287,6 +319,7 @@ export default function App() {
                 fontWeight: "900",
                 paddingTop: "10vh",
               }}
+              className="productSection"
             >
               Products
             </Typography>
@@ -500,6 +533,32 @@ export default function App() {
                 </Box>
               </Grid>
             </Grid>
+            <Box className='testimony' sx={{width:'100%',minHeight:'400px'}}><Typography variant='h3' sx={{textAlign:'center',fontFamily:'playwrite CL,cursive',pt:5,pb:5}} className="testimony-title">Testimony</Typography>
+                    <Slider  {...settings}>
+                      <Box><Typography variant='h4' sx={{textAlign:'center',fontFamily:'noto-serif',fontWeight:100}}>"For Solution’s smart class solution has exceeded our expectations.
+                         The clarity of the display panels, coupled with the interactive features,
+                          makes every lesson more dynamic. Teachers are finding it easier to engage 
+                          students, and the setup has been a great investment for our institution."
+                      </Typography><Typography sx={{textAlign:'center',pt:'10px'}}>– David L., School District IT Manager</Typography></Box>
+                      <Box><Typography variant='h4' sx={{textAlign:'center'}}>"We upgraded to For Solution’s display panels, and it’s been a fantastic
+                         improvement. From day one, it was easy to integrate with our existing system, and the 
+                         technical support has been prompt and helpful. Highly recommend for any school looking 
+                         to modernize!"
+                      
+                      </Typography><Typography  sx={{textAlign:'center',pt:'10px'}}>– Jessica P., Head of Curriculum</Typography></Box>
+                      <Box><Typography variant="h4" sx={{textAlign:'center',fontFamily:'noto-serif',fontWeight:100}}>"The team at For Solution provided excellent service from consultation to installation.
+                         The smart class solution is intuitive, and the panels have vibrant displays with responsive touch features. It has made 
+                         interactive learning a breeze in our classrooms."
+
+
+
+                      </Typography><Typography  sx={{textAlign:'center',pt:'10px'}}>– Paul A., Educational Technology Consultant</Typography></Box>
+                      <Box><Typography variant='h4' sx={{textAlign:'center',fontFamily:'noto-serif',fontWeight:100}}>"The installation process was smooth, and For Solution’s team ensured we were trained on all the features.
+                         The display panels are high-quality, and our teachers are thrilled with the technology's ease of use
+                        . It’s transformed our classrooms into more engaging environments."
+                      </Typography><Typography sx={{textAlign:'center',pt:'10px'}}>– Lisa T., School Operations Manager</Typography></Box>
+                    </Slider>
+            </Box>
           </Container>
           <Footer />
         </div>
