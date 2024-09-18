@@ -368,7 +368,7 @@ export default function App() {
                     }}
                     variant="h4"
                   >
-                    65 inch Alpha series Interactive White Digital Board
+                    Alpha series Interactive White Digital Board
                   </Typography>
                 </Box>
               </Grid>
@@ -540,7 +540,7 @@ export default function App() {
                     }}
                     variant="h4"
                   >
-                    Neod 55 Inches A-Type Digital Signage
+                    Neod A-Type Digital Signage
                   </Typography>
                 </Box>
               </Grid>
