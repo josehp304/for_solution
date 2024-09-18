@@ -85,39 +85,58 @@ export default function Footer() {
             </Typography>
             <br />
             <Box>
-              <XIcon
-                color="third"
-                sx={{
-                  height: "30px",
-                  width: "30px",
-                  pr: "10px",
-                  "&:hover": {
-                    transform: "Scale(1.1)",
-                  },
-                }}
-              />
-              <LinkedInIcon
-                color="third"
-                sx={{
-                  height: "30px",
-                  width: "30px",
-                  pr: "10px",
-                  "&:hover": {
-                    transform: "Scale(1.1)",
-                  },
-                }}
-              />
-              <InstagramIcon
-                color="third"
-                sx={{
-                  height: "30px",
-                  width: "30px",
-                  pr: "10px",
-                  "&:hover": {
-                    transform: "Scale(1.1)",
-                  },
-                }}
-              />
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.x.com/for_solutiongrp"
+              >
+                <XIcon
+                  color="third"
+                  sx={{
+                    height: "30px",
+                    width: "30px",
+                    pr: "10px",
+                    "&:hover": {
+                      transform: "Scale(1.1)",
+                    },
+                  }}
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/company/for-solution/?viewAsMember=true"
+              >
+                {" "}
+                <LinkedInIcon
+                  color="third"
+                  sx={{
+                    height: "30px",
+                    width: "30px",
+                    pr: "10px",
+                    "&:hover": {
+                      transform: "Scale(1.1)",
+                    },
+                  }}
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.instagram.com/for_solutiongrp/"
+              >
+                <InstagramIcon
+                  color="third"
+                  sx={{
+                    height: "30px",
+                    width: "30px",
+                    pr: "10px",
+                    "&:hover": {
+                      transform: "Scale(1.1)",
+                    },
+                  }}
+                />
+              </a>
               <FacebookIcon
                 color="third"
                 sx={{
