@@ -355,7 +355,7 @@ export default function App() {
                         url2: "/neod-65(1).webp",
                         url3: "/neod-65(2).webp",
                         url4: "/neod-65(3).webp",
-                        url5: "/neod-98.webp",
+                        // url5: "/neod-98.webp",
                       }}
                     />
                   </Box>
@@ -540,7 +540,7 @@ export default function App() {
                     }}
                     variant="h4"
                   >
-                    Neod A-Type Digital Signage
+                  A-Type Digital Signage
                   </Typography>
                 </Box>
               </Grid>
