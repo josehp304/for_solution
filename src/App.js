@@ -491,8 +491,8 @@ export default function App() {
                   <Box sx={{ height: "80%", width: "90%" }}>
                     <ImageLoop
                       urls={{
-                        url1: "/podium.webp",
-                        url2: "/podium(1).webp",
+                        // url1: "/podium.webp",
+                        // url2: "/podium(1).webp",
                         url3: "/podium(2).webp",
                         url4: "/podium(3).webp",
                       }}
