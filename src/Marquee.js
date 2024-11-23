@@ -6,7 +6,7 @@ export default function Marque() {
   const imgStyle = { height: "100px", width: "100px", paddingLeft: "100px" };
   return (
     <>
-      <Marquee gradient="true" gradientWidth={100} speed="25">
+      <Marquee speed={25}     pauseOnHover={true}>
         <img style={imgStyle} src="/iit.png"></img>
         <img style={imgStyle} src="/stanford (1).png"></img>
         <img style={imgStyle} src="/wipro.png"></img>

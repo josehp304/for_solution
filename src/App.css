@@ -3,6 +3,60 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: "Meshed Display";
+  src: url("../public/font/MeshedDisplay-BoldSlanted.ttf") ;
+}
+
+@font-face {
+  font-family: "meshed-regular";
+  src: url("../public/font/MeshedDisplay-Regular.otf");
+}
+@font-face{
+  font-family: "helvetica";
+  src:url("../public/font/Helvetica.ttf")
+}
+@font-face{
+  font-family:"helve-comp";
+  src:url("../public/font/helvetica-compressed.otf")
+}
+@font-face{
+  font-family:"halve-second";
+  src:url("../public/font/helvetica-light.ttf")
+}
+@font-face{
+  font-family:"nexa";
+  src:url("../public/font/Nexa-Heavy.ttf")
+}
+.helvetica{
+  font-family: "helvetica";
+  
+}
+.special-font {
+  font-family:"Aalto-Display-Personal-use";
+  src : url("../public/font/Aalto-Display-Personal-use.otf");
+  font-weight:400;
+  font-style: normal;
+
+}
+.special-font2{
+  font-family:"Meshed Display" ;
+  font-weight:900;
+}
+
+.special-font3{
+  font-family: "meshed-regular";
+  font-weight: 500;
+}
+
 
 .heading {
   line-height: 7rem;
@@ -50,9 +104,7 @@
   .headingContainer {
     min-height: 300px;
   }
-  .testimony-title{
-    /* color:red; */
-  }
+
 }
 @media (max-width: 750px) {
   .cardContainer {

@@ -53,13 +53,11 @@ export default function App() {
   };
   var settings = {
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     pauseOnHover: true,
   };
 
@@ -107,7 +105,7 @@ export default function App() {
               <Toolbar
                 sx={{ display: "flex", justifyContent: "space-between" }}
               >
-                <Box className="playwrite-cl">For solution</Box>
+                <Box sx={{fontFamily:"nexa"}}>For solution</Box>
                 <Box
                   sx={{
                     display: "flex",
@@ -143,11 +141,11 @@ export default function App() {
               className="firstPage"
             >
               <Box
-                className="headingContainer"
+                className="headingContainer helvetica"
                 sx={{
                   fontSize: "7rem",
                   Width: "100%",
-                  fontFamily: "poppins",
+                  fontFamily: "helvetica",
 
                   // paddingRight: "10px",
                   // top: "100px",
@@ -214,26 +212,26 @@ export default function App() {
             <Box
               sx={{
                 paddingTop: "5vh",
-                fontFamily: "Playwrite CL, cursive",
+                fontFamily: "helve-comp",
                 width: "100%",
                 textAlign: "center",
                 fontSize: "3rem",
-                fontWeight: "900",
+                fontWeight: "400",
               }}
             >
-              Trusted By
+              TRUSTED BY
             </Box>
             <Marque />
             <Typography
               variant="h3"
               sx={{
-                fontFamily: "Playwrite CL,cursive",
-                fontWeight: "1000",
+                fontFamily: "helve-comp",
+                fontWeight: "400",
                 width: "100%",
                 textAlign: "center",
                 marginTop: "5vh",
               }}
-              className="cards"
+              className="cards dm-serif-text-regular"
             >
               Why choose Us?
             </Typography>
@@ -253,11 +251,11 @@ export default function App() {
                 <CardContent>
                   <Typography
                     variant="h5"
-                    sx={{ fontWeight: "900", marginBottom: "10px" }}
+                    sx={{ fontWeight: "900", marginBottom: "10px", fontFamily:"nexa" }}
                   >
                     Top of the Line Specs
                   </Typography>
-                  <Typography>
+                  <Typography sx={{}}>
                     Our touchscreen panels come with OPS units featuring
                     high-end CPUs and components, ensuring future-proof
                     performance. Unlike other IFP companies, our panels offer
@@ -278,7 +276,7 @@ export default function App() {
                 <CardContent>
                   <Typography
                     variant="h5"
-                    sx={{ fontWeight: "800", marginBottom: "10px" }}
+                    sx={{ fontWeight: "800", marginBottom: "10px",fontFamily:"nexa" }}
                   >
                     Software Solution
                   </Typography>
@@ -304,7 +302,7 @@ export default function App() {
                 <CardContent>
                   <Typography
                     variant="h5"
-                    sx={{ fontWeight: "800", marginBottom: "10px" }}
+                    sx={{ fontWeight: "800", marginBottom: "10px",fontFamily:"nexa" }}
                   >
                     Learn visualy
                   </Typography>
@@ -327,8 +325,8 @@ export default function App() {
                 // backgroundColor: "red",
                 width: "100%",
                 textAlign: "center",
-                fontFamily: "Playwrite CL,cursive",
-                fontWeight: "900",
+                fontFamily: "helve-comp",
+                fontWeight: "500",
                 paddingTop: "10vh",
               }}
               className="productSection"
@@ -553,11 +551,11 @@ export default function App() {
                 variant="h3"
                 sx={{
                   textAlign: "center",
-                  fontFamily: "playwrite CL,cursive",
+                  fontFamily: "helve-comp",
                   pt: 5,
                   pb: 5,
                 }}
-                className="testimony-title"
+                className="special-font2"
               >
                 Testimony
               </Typography>
@@ -567,7 +565,7 @@ export default function App() {
                     variant="h4"
                     sx={{
                       textAlign: "center",
-                      fontFamily: "noto-serif",
+                      fontFamily: "halve-second",
                       fontWeight: 100,
                     }}
                   >
@@ -587,7 +585,7 @@ export default function App() {
                     variant="h4"
                     sx={{
                       textAlign: "center",
-                      fontFamily: "noto-serif",
+                      fontFamily: "halve-second",
                       fontWeight: 100,
                     }}
                   >
@@ -606,7 +604,7 @@ export default function App() {
                     variant="h4"
                     sx={{
                       textAlign: "center",
-                      fontFamily: "noto-serif",
+                      fontFamily: "halve-second",
                       fontWeight: 100,
                     }}
                   >
